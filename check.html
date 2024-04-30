@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 0.6rem 0;
+            background-color: #414141;
+            color: green;
+        }
+
+        h2 {
+            display: inline;
+            margin-left: 2rem;
+        }
+
+        .fa-solid {
+            font-size: 25px;
+            float: right;
+            margin-right: 4rem;
+        }
+
+        .hide {
+            margin-left: 2rem;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .hide p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .accordion {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="accordion">Accordion 1</h2>
+        <div class="hide">
+            <p>Content for Accordion 1</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="accordion">Accordion 2</h2>
+        <div class="hide">
+            <p>Content for Accordion 2</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="accordion">Accordion 3</h2>
+        <div class="hide">
+            <p>Content for Accordion 3</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="accordion">Accordion 4</h2>
+        <div class="hide">
+            <p>Content for Accordion 4</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="accordion">Accordion 5</h2>
+        <div class="hide">
+            <p>Content for Accordion 5</p>
+        </div>
+    </div>
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+        const hides = document.querySelectorAll('.hide');
+        
+        accordions.forEach((accordion, index) => {
+            accordion.addEventListener('click', () => {
+                hides[index].classList.toggle('change');
+                if (hides[index].classList.contains('change')) {
+                    hides[index].style.display = 'block';
+                } else {
+                    hides[index].style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

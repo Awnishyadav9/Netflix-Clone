@@ -1,0 +1,284 @@
+@import url('./global.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.flex{
+    display: flex;
+}
+.common{
+    margin-top: .4rem;
+    background:linear-gradient(to top, rgba(0,0,0,10) 0, rgba(0, 0, 0, 10) 60%, rgba(0,0,0,10) 100%);
+    color: var(--text-color);
+    padding: 5rem 1rem 5rem 2rem ;
+}
+body{
+    background:  linear-gradient(to top, rgba(0,0,0,0.8) 0, rgba(0, 0, 0, 0.8) 60%, rgba(0,0,0,0.8) 100%);;
+}
+section#first-section{
+     background: linear-gradient(to top, rgba(0,0,0,10) 0, rgba(0, 0, 0, 0.5) 60%, rgba(0,0,0,10) 100%),url('../image/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg') , no-repeat; 
+}
+nav{
+    display: flex;
+}
+.logo{
+    flex-grow: 1;
+}
+.logo img{
+    margin-top: .5rem;
+    margin-left: .8rem;
+     height: 5rem;
+    width: 11rem; 
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin: 2rem 3rem 0 0;
+}
+.option{
+    margin-right: 2rem;
+}
+.option select{
+    margin-top: -10px;
+    background:  linear-gradient(rgba(28, 29, 29, 0.8) , rgba(31, 30, 30, 0) , rgba(29, 28, 28, 0.8)),url('../image/transparent_1x1.png') ;
+    color: var(--third-color);
+    font-size: 16px;
+    padding: .4rem 1rem;
+    border: 1px solid var(--third-color) ;
+}
+/* .option:visited{
+border: 2px solid red;
+} */
+.singup-box a{
+    padding: .4rem .8rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var( --text-color);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.content-box{
+       text-align: center;
+       margin-top: 11.5rem;
+       padding-bottom: 13rem;
+       color: var(--text-color);
+}
+.content-box h1{
+    padding-bottom: 1rem;
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+.content-box span{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+form{
+    margin-top: 1rem;
+}
+form label{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+form input{
+    background:  linear-gradient(rgba(28, 29, 29, 0.8) , rgba(31, 30, 30, 0) , rgba(29, 28, 28, 0.8)),url('../image/transparent_1x1.png') ;
+    color: var(--third-color);
+    cursor: text;
+    margin: 1rem .3rem 0 0;
+    padding: 1rem 12rem 1rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--third-color);
+    font-size: 13px;
+}
+form button{
+    margin-top: .5rem;
+    padding: .3rem 3rem .9rem 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.text h1{
+    font-size: 3.1rem;
+    font-weight: bold;
+    padding: 10rem 0 1rem 0;
+}
+.text span{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+ .mob-part{
+position: relative;
+}
+ .box{
+    height: 6rem;
+    width: 25rem;
+    padding: .7rem;
+    position: absolute;
+    border: 2px solid var(--third-color);
+    border-radius: 12px;
+    bottom: 0;
+    margin-left: 7.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.box#img{
+    padding: 1rem;
+    width: 5rem;
+    margin: 2rem;
+}
+.logo-box img{
+height: 100%;
+}
+.box .text-prt{
+    margin-top: 1rem;
+}
+#tp{
+font-size: 16px;
+font-weight: 600;
+}
+#dl{
+    color: blue;
+}
+section#fourth-section .img-part-fr{
+    margin-top: 1rem;
+}
+section#sixth-section h1{
+font-size: 3rem;
+font-weight: 800;
+padding: 1rem 0;
+text-align: center;
+}
+section#sixth-section {
+    margin: .5rem 0rem 0rem 0;
+}
+section#sixth-section  .container{
+    padding: 1.5rem 0 1.5rem 2rem;
+    margin-top: .5rem;
+    font-size: 22px;
+    font-weight: 400;
+    background:  linear-gradient(rgb(40, 40, 40)100%,rgb(50, 50, 50)100%);;
+    cursor: pointer;
+}
+.hide {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: none;
+}
+.hide p {
+    font-size: 18px;
+    font-weight: bold;
+} 
+.ht{
+    margin-top: 1rem;
+} 
+.form-box{
+    margin-top: 2rem;
+}
+.form{
+    padding-top: 3rem;
+    text-align: center;
+}
+                                      v           
+section#footer{
+    color: var(--third-color); 
+    font-size: 1rem;
+}
+section#footer span{
+    margin-bottom: 1rem;
+}
+section#footer span a{
+    color: var(--third-color);
+}
+section#footer .footer-content{
+    justify-content: stretch;
+    margin:2rem 0 2rem 0;
+    font-size: 1rem;
+
+}
+.footer-content .first,.footer-content .second{
+    display: flex;
+    justify-content: stretch;  
+}
+.footer-content .first ul li ,.footer-content .second ul li {
+    padding: .5rem 2rem;
+    list-style: none;
+}
+.footer-content .first ul li a,.footer-content .second ul li a{
+    color: var(--third-color);
+}
+.new-opt{
+   margin-top: 1.7rem;
+}
+section#footer .last{
+    padding: 1rem;
+    font-size: 14px;
+}
+@media screen and (max-width: 992px) {
+    .flex,section#footer .footer-content{
+        flex-direction: column;
+    }
+    .flex img{
+        width: 100%;
+    }
+    .box{
+        margin-left: 8rem;
+        width: 50%;
+    }
+    .box img{
+        width: 40%;
+    }
+    .text h1 {
+        padding-top: 0;
+        font-size: 35px;
+    }
+    .content-box{
+        margin-top: 6rem;
+        padding-bottom: 8rem;
+    }
+    .content-box h1{
+        font-size: 40px;
+        /* margin-top: auto; */
+        padding-top: auto;
+    }
+    .third .text,.fifth .text{
+        order: 0;
+    }
+    .third .img-part,.fifth .img-part{
+        order: 1;
+    }
+    section#sixth-section .sixth-box>div i{
+        padding-right: auto;
+    }
+   form input{
+    padding: 1rem 8rem 1rem 1rem;
+   }
+   
+   #sixth-section h1{
+    font-size: 2rem;
+   }
+    
+}
+@media screen and (max-width: 500px) {
+   .right{
+    display: inline-block;
+   margin-left: 2.7rem;
+   }
+   .singup-box{
+    margin-top: 1rem;
+    margin-left: 2rem;
+   } 
+}
+
+
+
+
